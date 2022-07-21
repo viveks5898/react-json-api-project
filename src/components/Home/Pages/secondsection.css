@@ -1,0 +1,23 @@
+.secondsection{
+        margin-top: 70px;
+        text-transform: capitalize;
+        padding-bottom: 40px;
+}
+    .secondsection h1{
+        color: black;
+        font-size: 30px;
+        padding-bottom: 15px;
+    padding-top: 15px;
+    }
+    .secondsection p{
+        color: brown;
+        font-size: 20px;
+        padding-bottom: 30px;
+      }
+  .col-sm-4 i{
+    font-size: 45px;
+    padding-bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+  }

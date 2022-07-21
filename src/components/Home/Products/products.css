@@ -1,0 +1,32 @@
+.product-section{
+margin-top: 50px;
+}
+.img1{
+    height: 357px;
+    overflow: hidden;
+}
+.card.mb-4 {
+    max-height: 708px;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+}
+.card-text{
+-webkit-line-clamp: 3;
+position: relative;
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+}
+.col-lg-4{
+    padding: 40px;
+}
+.loading{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    color: tomato;
+}
+.price{
+    color: black;
+}

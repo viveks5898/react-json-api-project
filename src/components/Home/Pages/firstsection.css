@@ -1,0 +1,28 @@
+.image{
+    background-image: url("/public/images/image.jpg") ;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    text-transform: capitalize  ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.imagetext{
+    text-align: center;
+    padding-top: 120px;
+    font-weight: bold;
+
+}
+.span{
+    font-size: 70px;
+
+    color: #1fc624;
+}
+.firstsection{
+    margin-top: 90px;
+}
+.btn {
+    background: #fefefe;
+}
+.span1{
+    color: rgb(255, 255, 255);
+}

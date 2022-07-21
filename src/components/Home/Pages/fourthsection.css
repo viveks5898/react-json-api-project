@@ -1,0 +1,17 @@
+.fourthsection{
+    margin-top: 70px;
+    text-transform: capitalize;
+}
+hr{
+    width:40% ;
+    margin-left: 400px;
+    border: 1px solid black;    
+}
+.btn{
+    font-size: 20px;
+}
+.fourth-p p{
+    color: brown;
+    font-size: 20px;
+    padding-bottom: 30px;
+}

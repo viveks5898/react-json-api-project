@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body{
+  background: rgb(255, 255, 255);
+  font-family: 'PT Sans', sans-serif;
+}
+
+.form-control{
+  background-color:     #ffffff;
+
+  margin-bottom: 2.3rem;
+}
+
+.form-control:focus {
+
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid #da5767;
+    outline: 0;
+    box-shadow: none;
+}
+.btn{
+  background: #e68888;
+text-transform: capitalize;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.btn-primary:hover {
+    background-color: #1f0508;
+    border-color: #df8c96;
+  transition: .3s;
+}
+.form{
+    border: 25px solid rgb(255, 255, 255);
+    margin-top: 80px;
+    box-shadow: rgba(0, 0, 0, 0.35) -15px 15px 55px;
+}
+.errors{
+    color: rgb(187, 30, 30);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.register{
+    font-family: Tahoma, Verdana, sans-serif;
+}
