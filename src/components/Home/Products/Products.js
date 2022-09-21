@@ -1,18 +1,20 @@
-import React, { useEffect } from "react";
+import React, {  useEffect } from "react";
 import Footer from "../Pages/Footer";
 import Navbar from "../Pages/Navbar";
 import "./products.css";
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Singleproduct from "./Singleproduct";
-
+ import { useGlobalContext } from "../../../context/Context";
 const client = axios.create({
   baseURL: "https://fakestoreapi.com/products/",
 });
 
 const Products = () => {
   const [post, setPost] = useState([]);
+  const data =useGlobalContext()
+
+  console.log("data", data)
 
   useEffect(() => {
     async function getPost() {

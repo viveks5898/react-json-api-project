@@ -51,8 +51,17 @@ const Login = () => {
 		}
 		return errors;
 	}
-
-
+const arr = [12,214,15,18,45,56]
+ arr.forEach(item=>{
+	console.log(item)
+ })
+ const arrayValue = [12,214,15,18,45,56]
+ console.log("shuru me", arrayValue)
+ arrayValue.forEach((item, index, array)=>{
+   array[index] = item +5
+	console.log("item", item, index, array)
+})
+console.log("last me", arrayValue)
 	return (
 		<>
 			<div className="global-container">
