@@ -23,8 +23,8 @@ function App() {
       <AppProvider value={{state,array}}>
 
         <Routes>
-          {/* <Route path="/" element={<Login />} /> */}
-          <Route path="/" element={<Practice/>} />
+          <Route path="/" element={<Login />} />
+          {/* <Route path="/" element={<Practice/>} /> */}
 
           <Route path="/frontend/" element={<Frontend />} />
           <Route path="/blog" element={<Blog />} />
