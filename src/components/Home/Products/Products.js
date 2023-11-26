@@ -13,6 +13,7 @@ const client = axios.create({
 const Products = () => {
   const [post, setPost] = useState([]);
   const data =useGlobalContext()
+  
 
   console.log("data", data)
 

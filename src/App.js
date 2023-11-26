@@ -11,17 +11,20 @@ import Reactpaginate from "react-paginate";
 
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 import Singleproduct from "./components/Home/Products/Singleproduct";
-import { AppProvider } from "./context/Context";
+import { AppProvider, useGlobalContext } from "./context/Context";
+import Practice from "./components/Practice";
 function App() {
+   const state = useGlobalContext()
+   const array = useGlobalContext()
 
   return (
     <>
       <BrowserRouter>
-      <AppProvider>
+      <AppProvider value={{state,array}}>
 
         <Routes>
-          <Route path="/" element={<Login />} />
-          {/* <Route path="/" element={<Practice/>} /> */}
+          {/* <Route path="/" element={<Login />} /> */}
+          <Route path="/" element={<Practice/>} />
 
           <Route path="/frontend/" element={<Frontend />} />
           <Route path="/blog" element={<Blog />} />

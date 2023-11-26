@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createContext, useContext } from "react";
 
 
@@ -5,8 +6,13 @@ const Appcontext = createContext()
 
 
  const AppProvider = ({children}) =>{
-    return (
-        <Appcontext.Provider value={"Vivek singh"}>
+  const [ state, setState] = useState([{
+    "as":"Sa",
+    "ass":"Sa"
+   }])
+    const array = "value"
+  return (
+        <Appcontext.Provider value={{state, setState,array}}>
             {children}
         </Appcontext.Provider>
     )

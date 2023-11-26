@@ -7,8 +7,13 @@ import Singleblog from './Singleblog';
 import {
 	Link, NavLink
 } from 'react-router-dom';
+import { useGlobalContext } from '../../../context/Context';
 
 function Blog() {
+    const array = useGlobalContext(
+        
+    )
+    console.log("data", array)
     return (
         <>
             <Navbar></Navbar>

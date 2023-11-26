@@ -1,24 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './login.css';
 import Input from '../input/Input';
 import Button from '../button/Button';
 import data from "../../data/data.json";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { useGlobalContext } from '../../context/Context';
 import {
 	Link, useNavigate
 } from 'react-router-dom';
 
 const Login = () => {
-	const navigate = useNavigate()
-
+	 const {state, array} = useGlobalContext()
+	 console.log("data", state )
 	const [logindata, setlogindata] = useState({
 		email: "",
 		password: "",
 	});
+const [ formvalid, setFormvalid] = useState(false)
 
-
+	 useEffect(()=>{
+		setFormvalid(
+			logindata.email.includes('@') && logindata.password.trim().length>6
+		)
+		console.log("this is just testing")
+	 },[])
+	const navigate = useNavigate()
 	const onChange = (e) => {
 		const name = e.target.name;
 		const value = e.target.value;
@@ -51,17 +58,7 @@ const Login = () => {
 		}
 		return errors;
 	}
-const arr = [12,214,15,18,45,56]
- arr.forEach(item=>{
-	console.log(item)
- })
- const arrayValue = [12,214,15,18,45,56]
- console.log("shuru me", arrayValue)
- arrayValue.forEach((item, index, array)=>{
-   array[index] = item +5
-	console.log("item", item, index, array)
-})
-console.log("last me", arrayValue)
+
 	return (
 		<>
 			<div className="global-container">
