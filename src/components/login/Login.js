@@ -62,7 +62,7 @@ const [ formvalid, setFormvalid] = useState(false)
 	return (
 		<>
 			<div className="global-container">
-				<div className="card login-form">
+				<div className=" login-form">
 					<div className="card-body ">
 						<h3 className="card-title text-center">Login</h3>
 						<div className="card-text">
